@@ -1,0 +1,269 @@
+2016-03-07 16:08:16 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2016-03-07 16:08:16 INFO  XmlWebApplicationContext:577 - Refreshing Root WebApplicationContext: startup date [Mon Mar 07 16:08:16 CST 2016]; root of context hierarchy
+2016-03-07 16:08:16 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring/appl-config.xml]
+2016-03-07 16:08:17 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [connection.properties]
+2016-03-07 16:08:17 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-07 16:08:18 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-03-07 16:08:18 INFO  Version:41 - HHH000412: Hibernate Core {4.2.1.Final}
+2016-03-07 16:08:18 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-07 16:08:18 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-03-07 16:08:19 INFO  Dialect:128 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-03-07 16:08:19 INFO  LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-07 16:08:19 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-07 16:08:19 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-07 16:08:20 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@1ddae9b5] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-07 16:08:20 INFO  ContextLoader:347 - Root WebApplicationContext: initialization completed in 3910 ms
+2016-03-07 16:08:20 INFO  DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-03-07 16:08:20 INFO  XmlWebApplicationContext:577 - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:08:20 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:08:20 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-config.xml]
+2016-03-07 16:08:21 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.team.controllers.HomeController.loadHomePage()
+2016-03-07 16:08:21 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/update/{id}],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.updateTeam(com.team.domain.Team,java.lang.Long)
+2016-03-07 16:08:21 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/delete],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.deleteTeam(java.lang.Long)
+2016-03-07 16:08:21 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadAddPage()
+2016-03-07 16:08:21 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/edit/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadEditPage(java.lang.Long)
+2016-03-07 16:08:21 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.addTeam(com.team.domain.Team)
+2016-03-07 16:08:21 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadListPage()
+2016-03-07 16:08:21 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:08:20 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:08:22 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:08:20 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:08:22 INFO  DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 1530 ms
+2016-03-07 16:10:10 INFO  TeamSericeImpl:39 - Executing  load all teams method
+2016-03-07 16:10:10 INFO  TeamSericeImpl:41 - Executiion finised for load all teams method
+2016-03-07 16:30:17 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2016-03-07 16:30:18 INFO  XmlWebApplicationContext:577 - Refreshing Root WebApplicationContext: startup date [Mon Mar 07 16:30:18 CST 2016]; root of context hierarchy
+2016-03-07 16:30:18 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring/appl-config.xml]
+2016-03-07 16:30:18 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [connection.properties]
+2016-03-07 16:30:19 WARN  XmlWebApplicationContext:545 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'teamDao' defined in file [C:\Users\Appi\springFeb2016\teamApplication\target\classes\com\team\dao\TeamDao.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+2016-03-07 16:30:19 ERROR ContextLoader:353 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'teamDao' defined in file [C:\Users\Appi\springFeb2016\teamApplication\target\classes\com\team\dao\TeamDao.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:838)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:97)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 20 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 37 more
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getPointcut(ReflectiveAspectJAdvisorFactory.java:192)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:178)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:108)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:87)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	... 42 more
+Caused by: java.lang.ClassNotFoundException: org.aspectj.weaver.reflect.ReflectionWorld$ReflectionWorldException
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at org.mortbay.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:392)
+	at runjettyrun.ProjectClassLoader.loadClass(ProjectClassLoader.java:89)
+	... 52 more
+2016-03-07 16:31:42 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2016-03-07 16:31:43 INFO  XmlWebApplicationContext:577 - Refreshing Root WebApplicationContext: startup date [Mon Mar 07 16:31:43 CST 2016]; root of context hierarchy
+2016-03-07 16:31:43 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring/appl-config.xml]
+2016-03-07 16:31:44 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [connection.properties]
+2016-03-07 16:31:44 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-07 16:31:45 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-03-07 16:31:45 INFO  Version:41 - HHH000412: Hibernate Core {4.2.1.Final}
+2016-03-07 16:31:45 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-07 16:31:45 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-03-07 16:31:48 INFO  Dialect:128 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-03-07 16:31:48 INFO  LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-07 16:31:48 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-07 16:31:48 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-07 16:31:50 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3670f00] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-07 16:31:50 INFO  ContextLoader:347 - Root WebApplicationContext: initialization completed in 7435 ms
+2016-03-07 16:31:50 INFO  DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-03-07 16:31:50 INFO  XmlWebApplicationContext:577 - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:31:50 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:31:50 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-config.xml]
+2016-03-07 16:31:51 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.team.controllers.HomeController.loadHomePage()
+2016-03-07 16:31:51 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.addTeam(com.team.domain.Team)
+2016-03-07 16:31:51 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadAddPage()
+2016-03-07 16:31:51 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/edit/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadEditPage(java.lang.Long)
+2016-03-07 16:31:51 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadListPage()
+2016-03-07 16:31:51 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/delete],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.deleteTeam(java.lang.Long)
+2016-03-07 16:31:51 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/update/{id}],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.updateTeam(com.team.domain.Team,java.lang.Long)
+2016-03-07 16:31:51 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:31:50 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:31:51 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:31:50 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:31:52 INFO  DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 1807 ms
+2016-03-07 16:32:05 INFO  LoggingAspect:20 - Executing loadAllwith arguments [Ljava.lang.Object;@3d67ef3c
+2016-03-07 16:32:05 INFO  LoggingAspect:22 - Execution Finished loadAllwith arguments [Ljava.lang.Object;@3d67ef3c
+2016-03-07 16:33:00 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2016-03-07 16:33:00 INFO  XmlWebApplicationContext:577 - Refreshing Root WebApplicationContext: startup date [Mon Mar 07 16:33:00 CST 2016]; root of context hierarchy
+2016-03-07 16:33:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring/appl-config.xml]
+2016-03-07 16:33:01 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [connection.properties]
+2016-03-07 16:33:02 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-07 16:33:02 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-03-07 16:33:02 INFO  Version:41 - HHH000412: Hibernate Core {4.2.1.Final}
+2016-03-07 16:33:02 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-07 16:33:02 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-03-07 16:33:04 INFO  Dialect:128 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-03-07 16:33:04 INFO  LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-07 16:33:04 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-07 16:33:04 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-07 16:33:05 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3670f00] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-07 16:33:05 INFO  ContextLoader:347 - Root WebApplicationContext: initialization completed in 4649 ms
+2016-03-07 16:33:05 INFO  DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-03-07 16:33:05 INFO  XmlWebApplicationContext:577 - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:33:05 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:33:05 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-config.xml]
+2016-03-07 16:33:06 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.team.controllers.HomeController.loadHomePage()
+2016-03-07 16:33:06 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/update/{id}],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.updateTeam(com.team.domain.Team,java.lang.Long)
+2016-03-07 16:33:06 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/delete],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.deleteTeam(java.lang.Long)
+2016-03-07 16:33:06 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/edit/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadEditPage(java.lang.Long)
+2016-03-07 16:33:06 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadListPage()
+2016-03-07 16:33:06 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadAddPage()
+2016-03-07 16:33:06 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.addTeam(com.team.domain.Team)
+2016-03-07 16:33:06 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:33:05 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:33:06 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:33:05 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:33:06 INFO  DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 1462 ms
+2016-03-07 16:33:20 INFO  LoggingAspect:20 - Executing loadAllwith arguments [Ljava.lang.Object;@32573339
+2016-03-07 16:33:20 INFO  LoggingAspect:22 - Execution Finished loadAllwith arguments [Ljava.lang.Object;@32573339
+2016-03-07 16:34:14 INFO  LoggingAspect:20 - Executing getTeamByIdwith arguments [Ljava.lang.Object;@369b482
+2016-03-07 16:35:02 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2016-03-07 16:35:02 INFO  XmlWebApplicationContext:577 - Refreshing Root WebApplicationContext: startup date [Mon Mar 07 16:35:02 CST 2016]; root of context hierarchy
+2016-03-07 16:35:02 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring/appl-config.xml]
+2016-03-07 16:35:03 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [connection.properties]
+2016-03-07 16:35:03 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-07 16:35:04 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-03-07 16:35:04 INFO  Version:41 - HHH000412: Hibernate Core {4.2.1.Final}
+2016-03-07 16:35:04 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-07 16:35:04 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-03-07 16:35:05 INFO  Dialect:128 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-03-07 16:35:05 INFO  LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-07 16:35:05 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-07 16:35:05 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-07 16:35:07 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3670f00] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-07 16:35:07 INFO  ContextLoader:347 - Root WebApplicationContext: initialization completed in 4808 ms
+2016-03-07 16:35:07 INFO  DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-03-07 16:35:07 INFO  XmlWebApplicationContext:577 - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:35:07 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:35:07 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-config.xml]
+2016-03-07 16:35:07 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.team.controllers.HomeController.loadHomePage()
+2016-03-07 16:35:07 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/update/{id}],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.updateTeam(com.team.domain.Team,java.lang.Long)
+2016-03-07 16:35:07 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/delete],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.deleteTeam(java.lang.Long)
+2016-03-07 16:35:07 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.addTeam(com.team.domain.Team)
+2016-03-07 16:35:07 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadAddPage()
+2016-03-07 16:35:07 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadListPage()
+2016-03-07 16:35:07 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/edit/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadEditPage(java.lang.Long)
+2016-03-07 16:35:08 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:35:07 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:35:08 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:35:07 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:35:08 INFO  DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 1390 ms
+2016-03-07 16:35:21 INFO  LoggingAspect:20 - Executing loadAllwith arguments [Ljava.lang.Object;@6dd1a34f
+2016-03-07 16:35:21 INFO  LoggingAspect:22 - Execution Finished loadAllwith arguments [Ljava.lang.Object;@6dd1a34f
+2016-03-07 16:35:24 INFO  LoggingAspect:20 - Executing loadAllwith arguments [Ljava.lang.Object;@36abbb89
+2016-03-07 16:35:24 INFO  LoggingAspect:22 - Execution Finished loadAllwith arguments [Ljava.lang.Object;@36abbb89
+2016-03-07 16:35:26 INFO  LoggingAspect:20 - Executing getTeamByIdwith arguments [Ljava.lang.Object;@10f9f239
+2016-03-07 16:35:26 INFO  LoggingAspect:22 - Execution Finished getTeamByIdwith arguments [Ljava.lang.Object;@10f9f239
+2016-03-07 16:35:32 INFO  LoggingAspect:20 - Executing updateTeamwith arguments [Ljava.lang.Object;@2647c1e4
+2016-03-07 16:35:32 INFO  LoggingAspect:22 - Execution Finished updateTeamwith arguments [Ljava.lang.Object;@2647c1e4
+2016-03-07 16:36:38 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2016-03-07 16:36:38 INFO  XmlWebApplicationContext:577 - Refreshing Root WebApplicationContext: startup date [Mon Mar 07 16:36:38 CST 2016]; root of context hierarchy
+2016-03-07 16:36:38 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring/appl-config.xml]
+2016-03-07 16:36:39 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [connection.properties]
+2016-03-07 16:36:39 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-07 16:36:40 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-03-07 16:36:40 INFO  Version:41 - HHH000412: Hibernate Core {4.2.1.Final}
+2016-03-07 16:36:40 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-07 16:36:40 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-03-07 16:36:42 INFO  Dialect:128 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-03-07 16:36:42 INFO  LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-07 16:36:42 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-07 16:36:42 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-07 16:36:43 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3670f00] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-07 16:36:43 INFO  ContextLoader:347 - Root WebApplicationContext: initialization completed in 4991 ms
+2016-03-07 16:36:43 INFO  DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-03-07 16:36:43 INFO  XmlWebApplicationContext:577 - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:36:43 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:36:43 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-config.xml]
+2016-03-07 16:36:44 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.team.controllers.HomeController.loadHomePage()
+2016-03-07 16:36:44 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/update/{id}],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.updateTeam(com.team.domain.Team,java.lang.Long)
+2016-03-07 16:36:44 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/delete],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.deleteTeam(java.lang.Long)
+2016-03-07 16:36:44 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/edit/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadEditPage(java.lang.Long)
+2016-03-07 16:36:44 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.addTeam(com.team.domain.Team)
+2016-03-07 16:36:44 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadAddPage()
+2016-03-07 16:36:44 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadListPage()
+2016-03-07 16:36:44 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:36:43 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:36:44 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:36:43 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:36:44 INFO  DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 1207 ms
+2016-03-07 16:36:51 WARN  PageNotFound:1136 - No mapping found for HTTP request with URI [/teamApplication/list] in DispatcherServlet with name 'dispatcherServlet'
+2016-03-07 16:36:55 INFO  LoggingAspect:20 - Executing loadAllwith arguments [Ljava.lang.Object;@aa971b5
+2016-03-07 16:36:56 INFO  LoggingAspect:22 - Execution Finished loadAllwith arguments [Ljava.lang.Object;@aa971b5
+2016-03-07 16:37:02 INFO  LoggingAspect:20 - Executing getTeamByIdwith arguments [Ljava.lang.Object;@197180f5
+2016-03-07 16:37:02 INFO  LoggingAspect:22 - Execution Finished getTeamByIdwith arguments [Ljava.lang.Object;@197180f5
+2016-03-07 16:37:07 INFO  LoggingAspect:20 - Executing updateTeamwith arguments [Ljava.lang.Object;@24e92539
+2016-03-07 16:37:07 INFO  LoggingAspect:22 - Execution Finished updateTeamwith arguments [Ljava.lang.Object;@24e92539
+2016-03-07 16:39:56 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2016-03-07 16:39:56 INFO  XmlWebApplicationContext:577 - Refreshing Root WebApplicationContext: startup date [Mon Mar 07 16:39:56 CST 2016]; root of context hierarchy
+2016-03-07 16:39:56 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring/appl-config.xml]
+2016-03-07 16:39:57 INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [connection.properties]
+2016-03-07 16:39:58 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-07 16:39:59 INFO  Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2016-03-07 16:39:59 INFO  Version:41 - HHH000412: Hibernate Core {4.2.1.Final}
+2016-03-07 16:39:59 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-07 16:39:59 INFO  Environment:342 - HHH000021: Bytecode provider name : javassist
+2016-03-07 16:40:01 INFO  Dialect:128 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-03-07 16:40:01 INFO  LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-07 16:40:01 INFO  TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-07 16:40:01 INFO  ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-07 16:40:02 INFO  HibernateTransactionManager:360 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@3670f00] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-07 16:40:02 INFO  ContextLoader:347 - Root WebApplicationContext: initialization completed in 6443 ms
+2016-03-07 16:40:02 INFO  DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-03-07 16:40:02 INFO  XmlWebApplicationContext:577 - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:40:02 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:40:02 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/mvc-config.xml]
+2016-03-07 16:40:03 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.team.controllers.HomeController.loadHomePage()
+2016-03-07 16:40:03 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/update/{id}],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.updateTeam(com.team.domain.Team,java.lang.Long)
+2016-03-07 16:40:03 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/delete],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.deleteTeam(java.lang.Long)
+2016-03-07 16:40:03 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/list],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadListPage()
+2016-03-07 16:40:03 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/add],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadAddPage()
+2016-03-07 16:40:03 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/create],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.addTeam(com.team.domain.Team)
+2016-03-07 16:40:03 INFO  RequestMappingHandlerMapping:515 - Mapped "{[/team/edit/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.team.controllers.TeamController.loadEditPage(java.lang.Long)
+2016-03-07 16:40:03 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:40:02 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:40:03 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Mar 07 16:40:02 CST 2016]; parent: Root WebApplicationContext
+2016-03-07 16:40:04 INFO  DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 1923 ms
+2016-03-07 16:40:11 INFO  LoggingAspect:28 - Executing loadAll
+2016-03-07 16:40:11 INFO  LoggingAspect:37 - Execution finished for loadAll
+2016-03-07 16:40:16 INFO  LoggingAspect:28 - Executing loadAll
+2016-03-07 16:40:16 INFO  LoggingAspect:37 - Execution finished for loadAll
+2016-03-07 16:40:24 INFO  LoggingAspect:24 - Executing updateTeamwith arguments Team [id=16, name=Aus, rating=7]
+2016-03-07 16:40:24 INFO  LoggingAspect:33 - Execution Finished updateTeamwith arguments Team [id=16, name=Aus, rating=7]

@@ -4,17 +4,20 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.team.dao.TeamDao;
 import com.team.domain.Team;
 
 @Service
-public class TeamSericeImpl implements TeamService{
-
+public class TeamServiceImpl implements TeamService{
+			
 	@Autowired
 	private TeamDao teamDao;
 	
 	@Override
+	@Transactional(propagation=Propagation.REQUIRED)
 	public void createTeam(Team t) {
 		teamDao.createUpdate(t);
 	}
@@ -26,7 +29,8 @@ public class TeamSericeImpl implements TeamService{
 	
 	@Override
 	public List<Team> loadAll() {
-		return teamDao.getAllTeams();
+		List<Team>teams = teamDao.getAllTeams();
+		return teams;
 	}
 	
 	@Override

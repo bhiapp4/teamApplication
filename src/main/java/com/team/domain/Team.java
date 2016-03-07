@@ -40,5 +40,10 @@ public class Team {
 	public int getRating() {
 		return rating;
 	}
+
+	@Override
+	public String toString() {
+		return "Team [id=" + id + ", name=" + name + ", rating=" + rating + "]";
+	}
 	
 }
