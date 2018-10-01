@@ -3,6 +3,7 @@ package com.team.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,6 +38,7 @@ public class TeamController {
 	}
 
 	@RequestMapping(value="/delete", method=RequestMethod.GET)//teamId=10(request param)
+	@Secured("ROLE_ADMIN")
 	public ModelAndView deleteTeam(@RequestParam("teamId") Long id){
 		ModelAndView mv = new ModelAndView("home");
 		teamService.deleteTeam(id);
